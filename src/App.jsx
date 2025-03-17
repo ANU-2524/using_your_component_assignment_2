@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import Postcard from './components/postcard'
 import './App.css'
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
     {
       id: 2,
       profileImage: 'https://writestylesonline.com/wp-content/uploads/2016/08/Follow-These-Steps-for-a-Flawless-Professional-Profile-Picture.jpg',
-      username: 'bob',
+      username: 'Annuuu',
       content: 'Loving this social media app.',
       isLiked: true,
     },
@@ -31,6 +32,11 @@ function App() {
 
   return (
     <>
+    <div className="App">
+    {initialPosts.map((post)=>(
+      <Postcard key={post.id} post={post}/>
+    ))}
+    </div>
       
     </>
   )

@@ -6,7 +6,7 @@ Create two components:
 
 - PostCard: A component that displays individual post details including a profile picture, username, and a like button.
 
-- Likebutton:- you need to make seperate component for like button and import in postcard component. You need to make the like button toggle and style to chage color.
+- Likebutton:- you need to make seperate component for like button and import in postcard component. You need to make the like button toggle and style to change color.
 
 - You are given an array of posts data inside App.jsx.
 - After creating the component, you need to display all the posts data inside App.jsx using the component.
